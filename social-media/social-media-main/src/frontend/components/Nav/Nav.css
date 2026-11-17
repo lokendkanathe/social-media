@@ -1,0 +1,16 @@
+nav > a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--secondary-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  padding: 0 1rem;
+  height: 4rem;
+}

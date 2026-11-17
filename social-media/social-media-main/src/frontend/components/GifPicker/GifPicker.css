@@ -1,0 +1,66 @@
+.gif-picker {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--primary-color);
+  padding: 10px;
+  height: 18rem;
+  width: 20rem;
+}
+.gif-picker > input {
+  background-color: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  border-radius: 10px;
+  height: 1rem;
+  outline: none;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  outline: 1px solid var(--secondary-color);
+}
+.gifs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: auto;
+  gap: 10px;
+}
+.gifs-container > .gif {
+  width: 8rem;
+  height: 9rem;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+.gifs-container > .gif:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.close-btn {
+  cursor: pointer;
+  position: relative;
+  left: 18rem;
+  width: max-content;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 1px;
+  border-radius: 50%;
+}
+@media screen and (width<660px) {
+  .gif-picker {
+    width: 15rem;
+    height: 21rem;
+  }
+  .close-btn {
+    left: 13rem;
+  }
+  .gifs-container > .gif {
+    width: 10rem;
+    height: 10rem;
+  }
+  .gifs-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}

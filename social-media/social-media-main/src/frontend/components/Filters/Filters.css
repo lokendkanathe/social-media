@@ -1,0 +1,26 @@
+.filters-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--secondary-color);
+  color: var(--faded-primary-color);
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  z-index: 98;
+}
+.activeCategory {
+  color: white;
+  font-weight: bolder;
+}
+@media screen and (width>660px) {
+  .filters-container {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  .activeCategory {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+  }
+}
